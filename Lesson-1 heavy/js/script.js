@@ -1,15 +1,3 @@
-// var num = 33721;
-// var length = num.length;
-// var temp = 1;
-// var result = 0;
-
-// for (var i = 0; i < length; i++) { 
-// 	temp = num % 10;
-// 	result += temp;
-// 	num = parseInt(num / 10);
-// }
-
-// console.log(result);
 
 var num = 33721;
 var mult = 1;
