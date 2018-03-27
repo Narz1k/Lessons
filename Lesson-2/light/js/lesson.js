@@ -100,6 +100,14 @@ for (let i = 0; i < 3; i++) {
 // 		break;
 // }
 
+/* третий способ замены цикла for */
+// let i = 0
+// do {
+// 	mainList.shopGoods[i] = prompt('Какой тип товаров будем продавать?', '');
+// 	i++;
+// }
+while (i < 3)
+
 if (time < 0) {
 	console.log('Такого просто не может быть!');
 } else if (time > 8 && time < 20) {
