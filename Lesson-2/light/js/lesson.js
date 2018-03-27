@@ -62,7 +62,7 @@ let mainList = {
 	shopGoods: [],
 	employers: {},
 	open: false
-}
+};
 
 // mainList.shopGoods[0] = prompt('Какой тип товаров будем продавать?', '');
 // mainList.shopGoods[1] = prompt('Какой тип товаров будем продавать?', '');
@@ -116,7 +116,7 @@ if (time < 0) {
 		console.log('Уже слишком поздно!');
 		} else {
 			console.log('В сутках только 24 часа!');
-		};
+		}
 
 alert(mainList.budget / 30);
 
