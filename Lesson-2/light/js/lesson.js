@@ -1,5 +1,4 @@
 
-
 /* конструкция if */
 // var num = 59;
 
@@ -106,7 +105,7 @@ for (let i = 0; i < 3; i++) {
 // 	mainList.shopGoods[i] = prompt('Какой тип товаров будем продавать?', '');
 // 	i++;
 // }
-while (i < 3)
+// while (i < 3)
 
 if (time < 0) {
 	console.log('Такого просто не может быть!');
