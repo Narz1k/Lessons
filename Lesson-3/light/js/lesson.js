@@ -1,7 +1,7 @@
 let money,
 		name,
 		time,
-		price;
+		price
 
 //Функция по вводу бюджета
 function start() {
