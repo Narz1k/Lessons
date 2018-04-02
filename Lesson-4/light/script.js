@@ -63,9 +63,12 @@ let mainList = {
 	},
 	chooseShopItems: function chooseShopItems () {
 		let items = prompt('Перечислите через запятую ваши товары.', '');
-		if ((typeof(items)) === 'string' && (typeof(items)) !== null && items != '') {
-			mainList.shopItems = items.split(',');
-		}
+
+			while ((typeof(items)) === 'number' || items == null || items == '') {
+				items = prompt('Перечислите через запятую ваши товары.', '');
+			};
+
+		mainList.shopItems = items.split(',');
 		mainList.shopItems.push(prompt('Подождите еще ', ''));
 		mainList.shopItems.sort();
 	},
