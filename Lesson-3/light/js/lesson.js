@@ -1,9 +1,9 @@
 let money,
 		name,
 		time,
-		price
+		price;
 
-/* Функция по вводу бюджета */
+//Функция по вводу бюджета
 function start() {
 	money = prompt('Ваш бюджет?', '');
 
@@ -29,14 +29,12 @@ let mainList = {
 };
 
 /* Функция по скидкам */
-// function discountUser() {
-// 	if (discount == true){
-// 		price = Math.round(price/80 * 100);
-// 	} else {
-// 		break;
-// 	}
-// }
-// discountUser();
+function discountUser() {
+	if (mainList.discount == true){
+		price = Math.round(price/80) * 100;
+	}
+}
+discountUser();
 
 /* Функция по вводу продавцов */
 function employee(){
