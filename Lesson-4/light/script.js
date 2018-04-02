@@ -66,7 +66,6 @@ let mainList = {
 		if ((typeof(items)) === 'string' && (typeof(items)) !== null && items != '') {
 			mainList.shopItems = items.split(',');
 		}
-
 		mainList.shopItems.push(prompt('Подождите еще ', ''));
 		mainList.shopItems.sort();
 	},
