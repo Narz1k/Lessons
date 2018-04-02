@@ -64,9 +64,9 @@ let mainList = {
 	chooseShopItems: function chooseShopItems () {
 		let items = prompt('Перечислите через запятую ваши товары.', '');
 
-			while ((typeof(items)) === 'number' || items == null || items == '') {
-				items = prompt('Перечислите через запятую ваши товары.', '');
-			};
+			// while (items !== null && items != '') {
+			// 	items = prompt('Перечислите через запятую ваши товары.', '');
+			// };
 
 		mainList.shopItems = items.split(',');
 		mainList.shopItems.push(prompt('Подождите еще ', ''));
