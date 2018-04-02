@@ -75,3 +75,7 @@ let mainList = {
 };
 
 console.log(mainList);
+
+// mainList.shopItems(function(itm, i, arr) {
+// 	alert(i + ': ' + itm + '(массив: ' + arr + ')');
+// })
