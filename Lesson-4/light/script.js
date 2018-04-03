@@ -64,7 +64,7 @@ let mainList = {
 	chooseShopItems: function chooseShopItems () {
 		let items = prompt('Перечислите через запятую ваши товары.', '');
 
-			if ((typeof(items)) === 'string' && items !== null && items != ''){
+			if ((typeof(items)) === 'number' || items !== null || items != ''){
 				items = prompt('Перечислите через запятую ваши товары.', '');
 			}
 
@@ -73,6 +73,8 @@ let mainList = {
 		mainList.shopItems.sort();
 	},
 };
+
+
 
 console.log(mainList);
 

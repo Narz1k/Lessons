@@ -18,6 +18,17 @@ let arr = [20, 33, 1, 'Человек', 2, 3];
 
 arr.splice(3, 1); // удаляем с 3 элемента массива 1 элемен "Человек"
 
+let length = arr.length;
+let num;
+
+for ( let i = 0; i < length; i++ ) {
+	num = arr[i];
+
+	if (num != null) {
+		arr.push(num * num * num);
+	}
+};
+
 let result = arr.reduce(function(sum, current) { // Складываем элементы массива
 	return sum + current;
 }, 0);
