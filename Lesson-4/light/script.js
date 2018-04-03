@@ -64,7 +64,7 @@ let mainList = {
 	chooseShopItems: function chooseShopItems () {
 		let items = prompt('Перечислите через запятую ваши товары.', '');
 
-			if ((typeof(items)) === 'number' || items !== null || items != ''){
+			while (!isNaN(items) || items.indexOf(',') == -1) { // indexOf пока нет запятой, повторять вопрос 
 				items = prompt('Перечислите через запятую ваши товары.', '');
 			}
 
