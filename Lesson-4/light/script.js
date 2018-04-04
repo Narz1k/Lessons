@@ -69,15 +69,24 @@ let mainList = {
 			}
 
 		mainList.shopItems = items.split(',');
-		mainList.shopItems.push(prompt('Подождите еще ', ''));
+
+		mainList.shopItems.push(prompt('Подождите еще ', '')); 
+
 		mainList.shopItems.sort();
+
+		mainList.shopItems.forEach(function(item , i, arr) {
+			i = ++i;
+			document.write( i + ' У нас вы можите приобрести: ' + item + '<br>'); 
+		})
+
+		for ( var key in mainList.shopItems ) {
+			console.log('У нас в магазине вы можите приобрести: ' + mainList.shopItems);
+		}
 	},
+
+
 };
 
 
 
 console.log(mainList);
-
-// mainList.shopItems(function(itm, i, arr) {
-// 	alert(i + ': ' + itm + '(массив: ' + arr + ')');
-// })
